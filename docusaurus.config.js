@@ -16,7 +16,7 @@ const config = {
   trailingSlash: true,
   organizationName: 'Andy-Hay', // Usually your GitHub org/user name.
   projectName: 'andyhay.github.io', // Usually your repo name.
-  deploymentBranch = 'main',
+  deploymentBranch: 'main',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
