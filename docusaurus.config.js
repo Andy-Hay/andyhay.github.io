@@ -9,7 +9,7 @@ const config = {
   title: 'andyhay.info',
   tagline: 'Dinosaurs are cool',
   url: 'https://andyhay.info',
-  baseUrl: '/',
+  baseUrl: '/andyhay.github.io/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
