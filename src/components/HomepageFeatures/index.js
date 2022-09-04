@@ -1,51 +1,47 @@
 import React from 'react'
 import clsx from 'clsx'
 import styles from './styles.module.css'
+import Link from '@docusaurus/Link'
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Pictures',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        View my pictures on <a href="http://www.flickr.com/photos/andyhay/">Flickr</a> (uploaded under <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution 2.0 Generic licensing</a>).
       </>
     ),
+    link: 'http://www.flickr.com/photos/andyhay/',
+    button: 'See my pictures 📸',
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Work',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Contact me via LinkedIn to discuss work related opportunities.
       </>
     ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    link: 'http://uk.linkedin.com/pub/andrew-hay/11/b28/609/',
+    button: 'Work opportunities 💻',
   },
 ]
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, link, button }) {
   return (
-    <div className={clsx('col col--4')}>
+   
+    <div className={clsx('col col--6')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
-      </div>
+        <Link to={link} className="button button--secondary button--lg">{button}</Link>
+       </div>
     </div>
+    
   )
 }
 

@@ -7,15 +7,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'andyhay.info',
-  tagline: 'Dinosaurs are cool',
+  tagline: '',
   url: 'https://andyhay.info',
   baseUrl: '/andyhay.github.io/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   trailingSlash: true,
-  organizationName: 'Andy-Hay', // Usually your GitHub org/user name.
-  projectName: 'andyhay.github.io', // Usually your repo name.
+  organizationName: 'Andy-Hay',
+  projectName: 'andyhay.github.io',
   deploymentBranch: 'main',
   i18n: {
     defaultLocale: 'en',
@@ -37,6 +37,10 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'UA-64326954-1',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -52,12 +56,6 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {
             href: 'https://github.com/Andy-Hay/andyhay.github.io',
             label: 'GitHub',
             position: 'right',
@@ -71,7 +69,12 @@ const config = {
       prism: {
         theme: require('prism-react-renderer/themes/dracula'),
       },
-    }),
+    }),    
 }
+
+require.resolve('docusaurus-gtm-plugin'),
+      {
+        id: 'GTM-KDLL9Q8', 
+      }
 
 module.exports = config
