@@ -9,7 +9,13 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        View my pictures on <a href="http://www.flickr.com/photos/andyhay/">Flickr</a> (uploaded under <a href="https://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution 2.0 Generic licensing</a>).
+        View my pictures on{' '}
+        <a href="http://www.flickr.com/photos/andyhay/">Flickr</a> (uploaded
+        under{' '}
+        <a href="https://creativecommons.org/licenses/by/2.0/">
+          Creative Commons Attribution 2.0 Generic licensing
+        </a>
+        ).
       </>
     ),
     link: 'http://www.flickr.com/photos/andyhay/',
@@ -19,9 +25,7 @@ const FeatureList = [
     title: 'Work',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Contact me via LinkedIn to discuss work related opportunities.
-      </>
+      <>Contact me via LinkedIn to discuss work related opportunities.</>
     ),
     link: 'http://uk.linkedin.com/pub/andrew-hay/11/b28/609/',
     button: 'Work opportunities 💻',
@@ -30,7 +34,6 @@ const FeatureList = [
 
 function Feature({ Svg, title, description, link, button }) {
   return (
-   
     <div className={clsx('col col--6')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
@@ -38,10 +41,11 @@ function Feature({ Svg, title, description, link, button }) {
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
-        <Link to={link} className="button button--secondary button--lg">{button}</Link>
-       </div>
+        <Link to={link} className="button button--secondary button--lg">
+          {button}
+        </Link>
+      </div>
     </div>
-    
   )
 }
 

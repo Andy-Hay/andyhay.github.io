@@ -69,12 +69,12 @@ const config = {
       prism: {
         theme: require('prism-react-renderer/themes/dracula'),
       },
-    }),    
+    }),
 }
 
 require.resolve('docusaurus-gtm-plugin'),
-      {
-        id: 'GTM-KDLL9Q8', 
-      }
+  {
+    id: 'GTM-KDLL9Q8',
+  }
 
 module.exports = config
