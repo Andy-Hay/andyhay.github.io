@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link'
 const FeatureList = [
   {
     title: 'Pictures',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/flickr.svg').default,
     description: (
       <>
         View my pictures on{' '}
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Work',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/linkedin-icon-2.svg').default,
     description: (
       <>Contact me via LinkedIn to discuss work related opportunities.</>
     ),
