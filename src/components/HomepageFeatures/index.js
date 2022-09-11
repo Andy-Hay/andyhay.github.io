@@ -5,30 +5,24 @@ import Link from '@docusaurus/Link'
 
 const FeatureList = [
   {
+    title: 'Work',
+    Svg: require('@site/static/img/linkedin-icon-2.svg').default,
+    description: (
+      <>Connect with me via LinkedIn</>
+    ),
+    link: 'http://uk.linkedin.com/pub/andrew-hay/11/b28/609/',
+    button: 'Work opportunities 💻',
+  },
+  {
     title: 'Pictures',
     Svg: require('@site/static/img/flickr.svg').default,
     description: (
       <>
-        View my pictures on{' '}
-        <a href="http://www.flickr.com/photos/andyhay/">Flickr</a> (uploaded
-        under{' '}
-        <a href="https://creativecommons.org/licenses/by/2.0/">
-          Creative Commons Attribution 2.0 Generic licensing
-        </a>
-        ).
+        View my pictures
       </>
     ),
     link: 'http://www.flickr.com/photos/andyhay/',
     button: 'See my pictures 📸',
-  },
-  {
-    title: 'Work',
-    Svg: require('@site/static/img/linkedin-icon-2.svg').default,
-    description: (
-      <>Contact me via LinkedIn to discuss work related opportunities.</>
-    ),
-    link: 'http://uk.linkedin.com/pub/andrew-hay/11/b28/609/',
-    button: 'Work opportunities 💻',
   },
 ]
 
