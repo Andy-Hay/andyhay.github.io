@@ -18,11 +18,18 @@ const FeatureList = [
     link: 'http://www.flickr.com/photos/andyhay/',
     button: 'See my pictures 📸',
   },
+  {
+    title: 'Coding',
+    Svg: require('@site/static/img/github-icon-1.svg').default,
+    description: <>View my GitHub</>,
+    link: 'https://github.com/Andy-Hay',
+    button: 'See my repos 🗄️',
+  },
 ]
 
 function Feature({ Svg, title, description, link, button }) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
